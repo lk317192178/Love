@@ -102,20 +102,20 @@
       </div>
     </div>
     <script>
-      function getQueryString(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-          return r[2];
-        }
-        return null;
-      }
-      window.onload = function() {
-        let name = getQueryString("name");
-        document.getElementById("name").innerHTML = decodeURIComponent(
-          decodeURIComponent(name)
-        );
-      };
+      // function getQueryString(name) {
+      //   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+      //   var r = window.location.search.substr(1).match(reg);
+      //   if (r != null) {
+      //     return r[2];
+      //   }
+      //   return null;
+      // }
+      // window.onload = function() {
+      //   let name = getQueryString("name");
+      //   document.getElementById("name").innerHTML = decodeURIComponent(
+      //     decodeURIComponent(name)
+      //   );
+      // };
     </script>
   </body>
 </html>
